@@ -30,9 +30,6 @@ export interface PostProps {
 export interface UserCardProps {
   user: UserProps;
 }
-export interface UserPageProps {
-  posts: UserProps[];
-}
 
 export interface PostData {
   username: string;
