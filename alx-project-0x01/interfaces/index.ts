@@ -27,9 +27,6 @@ export interface PostProps {
   title: string;
   body: string;
 }
-export interface UserCardProps {
-  user: UserProps;
-}
 
 export interface PostData {
   username: string;
