@@ -25,10 +25,7 @@ export interface PostProps {
   userId: number;
   id: number;
   title: string;
-  content: string;
-}
-export interface PostsPageProps {
-  posts: PostProps[];
+  body: string;
 }
 export interface UserCardProps {
   user: UserProps;
@@ -55,4 +52,14 @@ export interface PostModalProps {
 export interface userModalProps {
   onClose: () => void;
   onSubmit: (post: PostData) => void;
+}
+
+export interface ButtonProps {
+  className: string;
+  onClick: () => void;
+  children: string;
+}
+export interface FooterProps {
+  children: React.ReactNode;
+  className: string;
 }
