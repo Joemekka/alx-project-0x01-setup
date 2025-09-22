@@ -6,7 +6,7 @@ export const PostModal: React.FC<PostModalProps> = ({ onClose, onSubmit }) => {
   const [user, setUser] = useState<PostData>({
     userId: 1,
     title: "",
-    content: "",
+    body: "",
     username: "",
     email: "",
     phone: "",

@@ -6,7 +6,7 @@ export const UserModal: React.FC<userModalProps> = ({ onClose, onSubmit }) => {
   const [user, setPost] = useState<PostData>({
     userId: 1,
     title: " ",
-    content: " ",
+    body: " ",
     username: "",
     email: "",
     phone: "",
@@ -66,7 +66,7 @@ export const UserModal: React.FC<userModalProps> = ({ onClose, onSubmit }) => {
             <textarea
               id="body"
               name="body"
-              value={user.content}
+              value={user.body}
               onChange={handleSubmit}
               rows={4}
               className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"

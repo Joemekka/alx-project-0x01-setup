@@ -42,7 +42,7 @@ export interface PostData {
   userId: number;
   id?: number;
   title: string;
-  content: string;
+  body: string;
 }
 
 export interface PostModalProps {
