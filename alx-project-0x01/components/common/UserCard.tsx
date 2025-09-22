@@ -25,17 +25,17 @@ const UserCard: React.FC<UserCardProps> = ({ user }) => {
 
       <div className="mt-3">
         <h3 className="font-semibold text-gray-800">Company</h3>
-        <p className="text-gray-600">{user.company.name}</p>
-        <p className="italic text-gray-500">“{user.company.catchPhrase}”</p>
+        <p className="text-gray-600">{user.company?.name}</p>
+        <p className="italic text-gray-500">“{user.company?.catchPhrase}”</p>
       </div>
 
       <div className="mt-3">
         <h3 className="font-semibold text-gray-800">Address</h3>
         <p className="text-gray-600">
-          {user.address.suite}, {user.address.street}
+          {user.address?.suite}, {user.address?.street}
         </p>
         <p className="text-gray-600">
-          {user.address.city}, {user.address.zipcode}
+          {user.address?.city}, {user.address?.zipcode}
         </p>
       </div>
     </div>
